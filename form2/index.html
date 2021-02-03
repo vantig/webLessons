@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebDev</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="form_main">
+
+        <div class="title">
+            <div class="img_wrapper">
+                <img src="./assets/tracking.svg" alt="telephone">
+            </div>
+
+            <h2>Shipping Details</h2>
+        </div>
+
+        <form action="#">
+            <div class="name_container">
+                <div class="input_container name">
+                    <label for="name_input">First</label>
+                    <input type="text"  name="name" id="name_input" required>
+                </div>
+                <div class="input_container lname">
+                    <label for="lname_input">Last</label>
+                    <input type="text" name="email" id="lname_input" required>
+                </div>
+            </div>
+
+            <div class="input_container street">
+                <label for="street_input">Street</label>
+                <input type="text" name="email" id="street_input" required>
+            </div>
+            <div class="city_container">
+                <div class="input_container city">
+                    <label for="city_input">City</label>
+                    <input type="text"  name="name" id="city_input" required>
+                </div>
+                <div class="input_container state">
+                    <label for="state_input">State</label>
+                    <input type="text"  name="name" id="state_input" required>
+                </div>
+                <div class="input_container zip">
+                    <label for="zip_input">Zip</label>
+                    <input type="number" name="email" id="zip_input" required>
+                </div>
+            </div>
+
+            <div class="title card_title">
+                <div class="img_wrapper">
+                    <img src="./assets/credit-card.svg" alt="telephone">
+                </div>
+
+                <h2>Payment Information</h2>
+            </div>
+            <div class="input_container card">
+                <label for="card_input">Credit Card NO.</label>
+                <input maxlength="12" type="text" name="card" id="card_input" required>
+            </div>
+            <div class="card_container">
+                <div class="input_container exp">
+                    <label for="exp_input">EXP</label>
+                    <input type="text"  name="name" id="exp_input" required>
+                </div>
+                <div class="input_container cvv">
+                    <label for="cvv_input">CVV</label>
+                    <input type="number" name="email" id="cvv_input" required>
+                </div>
+            </div>
+                <button class="send_button" type="submit" >send message</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
