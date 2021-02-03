@@ -1,7 +1,8 @@
 html {
-    font-family: 'Montserrat', sans-serif;
+
 }
 .form_main{
+    background-color: #eae5d8;
     max-width: 50%;
     margin: 0 auto;
     border: 2px solid black;
@@ -68,24 +69,37 @@ input,select,textarea{
     font-weight: 400;
     border:0;
     border-bottom: 1px solid black;
+    color: #927f78;
+    margin-bottom:20px;
+    background-color: #eae5d8;
 }
-input:focus,select:focus,textarea:focus{
+textarea{
+    resize: none;
+}
+::placeholder{
+    color: #927f78;
+}
+input:focus,select:focus,textarea:focus,button:focus{
     outline: none;
 }
+
 .name{
     float: left;
-   width: 45%;
+    width: 45%;
 }
 .email{
     float: right;
    width: 45%;
 }
 .send_button{
-    margin-top:20px;
     box-sizing: border-box;
     text-transform: uppercase;
     padding: 10px;
     font-size: 8px;
     font-weight: 600;
     border: 1px solid black;
+    transition: transform .2s linear;
+}
+.send_button:hover{
+    transform: scale(1.1,1.1);
 }
