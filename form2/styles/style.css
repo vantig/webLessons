@@ -1,0 +1,96 @@
+html {
+    font-family: 'Big Shoulders Display', cursive;
+    align-items: center;
+}
+
+
+.form_main {
+    padding: 30px 100px;
+    max-width: 30%;
+    margin: 0 auto;
+    background-color: orange;
+    box-shadow: aqua;
+}
+
+.form_main_inner {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.title {
+    display: flex;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.img_wrapper {
+    margin-right: 10px;
+    height: 100%;
+    width: 40px;
+}
+
+.img_wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    margin: 0;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input {
+    border: 0;
+    height: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+.name,.lname {
+    flex-basis: 40%;
+}
+label {
+    display: block;
+}
+
+.name_container,.city_container, .card_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.city,.zip,.state{
+    flex-basis: 31%;
+}
+.exp,.cvv{
+    flex-basis: 45%;
+}
+.send_button{
+    border: 0;
+    padding: 14px;
+    text-transform: uppercase;
+    background-color: #e06528;
+    transition: transform 0.2s linear;
+}
+.send_button:hover{
+    transform: scale(1.1,1.1);
+}
+:focus{
+
+    outline: none;
+}
