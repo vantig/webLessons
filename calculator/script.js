@@ -144,6 +144,7 @@ function appendNumber(number) {
     currentOperand += number.toString();
 
 }
+
 function clear() {
     currentOperand = '';
     previousOperand = '';
