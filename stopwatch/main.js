@@ -74,6 +74,7 @@ startButton.addEventListener("click", () => {
 restartButton.addEventListener("click", () => {
 
     stopwatch.restart();
+    startButton.innerHTML = "start";
 
 });
 clearAllButton.addEventListener("click", () => {
