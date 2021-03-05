@@ -4,3 +4,6 @@ https://vantig.github.io/webLessons/form
 https://vantig.github.io/webLessons/form2
 <br>
 https://vantig.github.io/webLessons/calculator
+<br>
+https://vantig.github.io/webLessons/stopwatch
+<br>
