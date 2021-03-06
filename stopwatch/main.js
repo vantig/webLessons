@@ -81,6 +81,8 @@ clearAllButton.addEventListener("click", () => {
 
     stopwatch.clear();
     docResultsElement.innerHTML="";
+    startButton.innerHTML = "start";
+
 });
 
 
