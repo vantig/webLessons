@@ -74,7 +74,6 @@ startButton.addEventListener("click", () => {
         return;
     }
     stopwatch.stop();
-    recordResult();
     startButton.innerHTML = "start";
 
 });
