@@ -100,6 +100,7 @@ function convertMsToTime(duration) {
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
     milliseconds = (milliseconds < 100) ? "0" + milliseconds : milliseconds;
+    milliseconds = (milliseconds < 10) ? "00" + milliseconds : milliseconds;
 
 
     return hours + ":" + minutes + ":" + seconds + ":" + milliseconds;
