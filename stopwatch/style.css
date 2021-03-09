@@ -38,6 +38,7 @@ color: #ffffff;
 
 .clear_all_button,
 .restart_button,
+.record_button,
 .start_button {
     cursor: pointer;
     margin: 20px;
