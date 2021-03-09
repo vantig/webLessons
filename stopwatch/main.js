@@ -45,14 +45,21 @@ class Stopwatch {
 const docTimeElement = document.querySelector(".time");
 const clearAllButton = document.querySelector('.clear_all_button');
 const restartButton = document.querySelector('.restart_button');
+const recordButton = document.querySelector('.record_button');
 const startButton = document.querySelector('.start_button');
 const docResultsElement = document.querySelector('.results');
 
 const stopwatch = new Stopwatch();
 
-setInterval(updateDisplay, 10);
+setInterval(updateDisplay, 1);
 
 
+recordButton.addEventListener("click",()=>{
+    if (stopwatch.timeStart !== null) {
+        recordResult();
+    }
+
+});
 startButton.addEventListener("click", () => {
 
     if (startButton.innerHTML === "start" && stopwatch.timeStart === null) {
@@ -91,6 +98,7 @@ function updateDisplay() {
 }
 
 function convertMsToTime(duration) {
+    if (duration===0)return  "00:00:00:000" ;
     let milliseconds = (duration % 1000),
         seconds = Math.floor((duration / 1000) % 60),
         minutes = Math.floor((duration / (1000 * 60)) % 60),
@@ -100,7 +108,7 @@ function convertMsToTime(duration) {
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
     milliseconds = (milliseconds < 100) ? "0" + milliseconds : milliseconds;
-    milliseconds = (milliseconds < 10) ? "00" + milliseconds : milliseconds;
+    milliseconds = (milliseconds < 10) ? "0" + milliseconds : milliseconds;
 
 
     return hours + ":" + minutes + ":" + seconds + ":" + milliseconds;
